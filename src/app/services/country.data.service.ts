@@ -13,13 +13,6 @@ export class CountryDataService {
   constructor(http: Http) {
     this._http = http;
   }
-
-  private buildOptions(): RequestOptions{
-    const headers = new Headers({ 'Content-Type': 'application/json' });
-    return new RequestOptions({ headers: headers });
-  }
-
-
   public GetAll(): Observable<IServiceCountry[]> {
       return this._http.get(this.url).map((r: Response) => r.json());
   }
