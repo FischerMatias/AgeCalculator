@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  color: #eeeeee !important;
+  background-color: #222222 !important;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+* {
+  border-color: #555555 !important;
+}
